@@ -16,4 +16,9 @@ public class CalculatorController {
     public int division(@RequestParam int a, @RequestParam int b) {
         return calc.division(a,b);
     }
+
+    @GetMapping("/convertInches")
+    public double convertInchesToCm(@RequestParam double a) {
+        return calc.convertInchesToCm(a);
+    }
 }
