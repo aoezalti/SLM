@@ -26,8 +26,6 @@ jobs:
       run: mvn -B package --file pom.xml
       
     - run: mkdir download && cp target/*.jar download
-  
-  
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2
       with:
